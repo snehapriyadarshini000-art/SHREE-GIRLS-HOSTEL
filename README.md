@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Girls Hostel</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#8e44ad;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header h1{
+font-size:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffe082;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff9800;
+color:white;
+padding:15px 35px;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+}
+
+.btn:hover{
+background:#e67e22;
+}
+
+section{
+padding:70px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#8e44ad;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#8e44ad;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+font-size:17px;
+cursor:pointer;
+}
+
+button:hover{
+background:#6c3483;
+}
+
+footer{
+background:#8e44ad;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>Shree Girls Hostel</h1>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#facilities">Facilities</a>
+
+<a href="#rooms">Rooms</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Welcome to Shree Girls Hostel</h2>
+
+<p>Safe • Comfortable • Affordable Living for Students & Working Women</p>
+
+<a href="#contact" class="btn">Book Now</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<h3>Your Home Away From Home</h3>
+
+<br>
+
+<p>
+
+Shree Girls Hostel provides a secure, clean, and peaceful environment for students and working professionals. Our goal is to make every resident feel comfortable with modern amenities and caring management.
+
+</p>
+
+<br>
+
+<p>
+
+We offer induction, 24×7 security, Wi-Fi, housekeeping, and a friendly atmosphere for study and personal growth.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="facilities">
+
+<h2>Facilities</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🛡 24×7 Security</h3>
+
+<p>CCTV surveillance and secure premises.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📶 High-Speed Wi-Fi</h3>
+
+<p>Unlimited internet for study and work.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍽 Healthy Meals</h3>
+
+<p>Induction provided.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧹 Housekeeping</h3>
+
+<p>Clean rooms and common areas.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚿 Clean Bathrooms</h3>
+
+<p>Regular maintenance and hygiene.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="rooms">
+
+<h2>Room Options</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Single Room</h3>
+
+<p> Rs. 4,500<p>
+
+<p>Private room with attached facilities.</p>
+
+
+
+<div class="card">
+
+<h3>Double Sharing</h3>
+
+<p> Rs. 2,200<p>
+
+<p>Comfortable shared accommodation.</p>
+
+
+
+<div class="card">
+
+<h3>Dormitory</h3>
+
+<p> Rs. 1,800<p>
+
+<p>Affordable rooms for students.</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Shree Girls Hostel</h3>
+
+<br>
+
+<p>📍 Address: BhawaniPatna, Kalahandi, Odisha</p>
+
+<br>
+
+<p>📞 Phone: +91 8249132126 , 9040050690</p>
+
+<br>
+
+<p>📧 Email: prasantu75@gmail.com</p>
+
+<br>
+
+<p>⏰ Open: 9 AM - 9 PM</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Shree Girls Hostel. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function submitForm(e){
+
+e.preventDefault();
+
+alert("Thank you! Your enquiry has been received. We will contact you soon.");
+
+}
+
+</script>
+
+</body>
+</html>
